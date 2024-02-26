@@ -16,7 +16,7 @@ This repository is the official implementation of the ICLR 2024 paper: [Towards 
 }
 ```
 
-## dependencies 
+## Dependencies 
 
 Dependencies:
 - tabulate
