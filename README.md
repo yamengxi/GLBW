@@ -1,9 +1,20 @@
-# BackdoorBox: A Python Toolbox for Backdoor Attacks and Defenses
+# Towards Faithful XAI Evaluation via Generalization-Limited Backdoor Watermark
 ![Python 3.8](https://img.shields.io/badge/python-3.8-DodgerBlue.svg?style=plastic)
 ![Pytorch 1.8.0](https://img.shields.io/badge/pytorch-1.8.0-DodgerBlue.svg?style=plastic)
 ![torchvision 0.9.0](https://img.shields.io/badge/torchvision-0.9.0-DodgerBlue.svg?style=plastic)
 ![CUDA 11.1](https://img.shields.io/badge/cuda-11.1-DodgerBlue.svg?style=plastic)
 ![License GPL](https://img.shields.io/badge/license-GPL-DodgerBlue.svg?style=plastic)
+
+This repository is the official implementation of the ICLR 2024 paper: [Towards Faithful XAI Evaluation via Generalization-Limited Backdoor Watermark](https://openreview.net/forum?id=cObFETcoeW).
+
+```
+@inproceedings{ya2024towards,
+  title={Towards Faithful XAI Evaluation via Generalization-Limited Backdoor Watermark},
+  author={Ya, Mengxi and Li, Yiming and Dai, Tao and Wang, bin and Jiang, Yong and Xia, Shu-Tao},
+  booktitle={ICLR},
+  year={2024}
+}
+```
 
 Backdoor attacks are emerging yet critical threats in the training process of deep neural networks (DNNs), where the adversary intends to embed specific hidden backdoor into the models. The attacked DNNs will behave normally in predicting benign samples, whereas the predictions will be maliciously changed whenever the adversary-specified trigger patterns appear. Currently, there were many existing backdoor attacks and defenses. Although most of them were open-sourced, there is still no toolbox that can easily and flexibly implement and compare them simultaneously.
 
