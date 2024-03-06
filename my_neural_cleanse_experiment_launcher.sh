@@ -9,6 +9,43 @@ srun -n 1 -c 6 -p gpu --gpus=1 python my_neural_cleanse_experiment_launcher.py \
 2>&1 | tee debug.log
 
 
+/HOME/scz0bof/run/Backdoor/XAI/Backdoor_XAI/adv_experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/adv_epochs11_adv_lambda0.0010000000_lambda_1=0.30_lambda_2=0.30_global_seed666_deterministicFalse_2024-03-04_21:30:54/ckpt_epoch_8.pth
+
+
+srun -n 1 -c 6 -p gpu --gpus=1 python my_neural_cleanse_experiment_launcher.py \
+--model_type core --model_name ResNet-18 \
+--model_path ./defense_experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/adv_epochs13_adv_lambda0.0010000000_lambda_1=0.02_lambda_2=0.02_global_seed666_deterministicFalse_2024-03-05_21:26:16/ckpt_epoch_10.pth \
+--dataset_name CIFAR-10 --dataset_root_path ../datasets --y_target 0 \
+--mask_path ./experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/weight.pth \
+--pattern_path ./experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/pattern.pth \
+--init_cost_rate 95.32865136861801 --NC_epochs 3 --NC_lr 2048.0 --NC_optim mixed --NC_schedule 1501 --NC_gamma 0.5 \
+--save_trigger_path ./NeuralCleanse/now_my_defense_NC_experiments
+
+
+srun -n 1 -c 6 -p gpu --gpus=1 python my_neural_cleanse_experiment_launcher.py \
+--model_type core --model_name ResNet-18 \
+--model_path ./defense_experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/adv_epochs13_adv_lambda0.0010000000_lambda_1=0.02_lambda_2=0.05_global_seed666_deterministicFalse_2024-03-05_21:26:16/ckpt_epoch_7.pth \
+--dataset_name CIFAR-10 --dataset_root_path ../datasets --y_target 0 \
+--mask_path ./experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/weight.pth \
+--pattern_path ./experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/pattern.pth \
+--init_cost_rate 64.57071006298065 --NC_epochs 3 --NC_lr 2048.0 --NC_optim mixed --NC_schedule 1501 --NC_gamma 0.5 \
+--save_trigger_path ./NeuralCleanse/now_my_defense_NC_experiments
+
+
+srun -n 1 -c 6 -p gpu --gpus=1 python my_neural_cleanse_experiment_launcher.py \
+--model_type core --model_name ResNet-18 \
+--model_path ./defense_experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/adv_epochs10_adv_lambda0.0010000000_lambda_1=0.03_lambda_2=0.03_global_seed666_deterministicFalse_2024-03-05_21:26:38/ckpt_epoch_3.pth \
+--dataset_name CIFAR-10 --dataset_root_path ../datasets --y_target 0 \
+--mask_path ./experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/weight.pth \
+--pattern_path ./experiments/core_ResNet-18_CIFAR-10_BadNets_square_trigger_3x3_random_location=False_poisoning_rate=0.05_y_target=0_2023-04-30_20:34:22/pattern.pth \
+--init_cost_rate 80.9997022151947 --NC_epochs 3 --NC_lr 2048.0 --NC_optim mixed --NC_schedule 1501 --NC_gamma 0.5 \
+--save_trigger_path ./NeuralCleanse/now_my_defense_NC_experiments
+
+
+
+
+
+
 # Section3.2 实验1 （2*2张图） benchmark standard backdoor
 # CIFAR-10
 dataset_name=CIFAR-10
