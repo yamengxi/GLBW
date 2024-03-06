@@ -5,7 +5,7 @@
 ![CUDA 11.1](https://img.shields.io/badge/cuda-11.1-DodgerBlue.svg?style=plastic)
 ![License GPL](https://img.shields.io/badge/license-GPL-DodgerBlue.svg?style=plastic)
 
-This repository is the official implementation of the ICLR 2024 paper: [Towards Faithful XAI Evaluation via Generalization-Limited Backdoor Watermark](https://openreview.net/forum?id=cObFETcoeW).
+This repository is the official implementation of the ICLR 2024 paper: [Towards Faithful XAI Evaluation via Generalization-Limited Backdoor Watermark](https://openreview.net/forum?id=cObFETcoeW). This research project is developed based on Python 3 and Pytorch, created by Mengxi Ya and [Yiming Li](http://liyiming.tech/).
 
 ```
 @inproceedings{ya2024towards,
@@ -18,26 +18,7 @@ This repository is the official implementation of the ICLR 2024 paper: [Towards 
 
 ## Dependencies 
 
-Dependencies:
-- tabulate
-- tqdm
-- matplotlib
-- numpy
-- pillow
-- opencv-python
-- torch==2.0.0
-- torchvision==0.15.1
-- scipy
-- requests
-- termcolor
-- easydict
-- seaborn
-- imageio
-- lpips
-- lime
-- captum
-
-Use requirements.txt to install python packages:
+Use requirements.txt to install necessary python packages:
 
 ```
 pip install -r ./requirements.txt
@@ -70,7 +51,7 @@ Refer to ```./evalxai/eval+.sh```
 
 Refer to ```./evalxai/eval+_for_GLBW.sh```
 
-## Generalization Research
+## Generalization of Model Watermarks
 
 ### The distance between potential triggers and the original one used for training w.r.t. the loss value on CIFAR-10 and GTSRB
 
